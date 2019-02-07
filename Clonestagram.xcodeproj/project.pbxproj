@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8002C91821FD43CC0003FEB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002C91721FD43CC0003FEB6 /* AppDelegate.swift */; };
-		8002C91A21FD43CC0003FEB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002C91921FD43CC0003FEB6 /* ViewController.swift */; };
 		8002C91D21FD43CC0003FEB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8002C91B21FD43CC0003FEB6 /* Main.storyboard */; };
 		8002C91F21FD43CE0003FEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8002C91E21FD43CE0003FEB6 /* Assets.xcassets */; };
 		8002C92221FD43CE0003FEB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8002C92021FD43CE0003FEB6 /* LaunchScreen.storyboard */; };
 		8002C92A21FD4D160003FEB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8002C92921FD4D160003FEB6 /* GoogleService-Info.plist */; };
 		8002C93421FE4E220003FEB6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8002C93321FE4E220003FEB6 /* Login.storyboard */; };
 		8002C93621FE57000003FEB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002C93521FE57000003FEB6 /* LoginViewController.swift */; };
+		8002C93C21FF7AAB0003FEB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002C93B21FF7AAB0003FEB6 /* User.swift */; };
+		8002C93E21FF94200003FEB6 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002C93D21FF94200003FEB6 /* CreateUsernameViewController.swift */; };
+		8002C94021FFD7D20003FEB6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002C93F21FFD7D20003FEB6 /* UserService.swift */; };
+		805126582202005B00C2F3A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805126572202005B00C2F3A7 /* Constants.swift */; };
+		8051265A2202011000C2F3A7 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805126592202011000C2F3A7 /* Storyboard+Utility.swift */; };
+		8051265C22020B1600C2F3A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051265B22020B1600C2F3A7 /* HomeViewController.swift */; };
+		8051265E22020B6F00C2F3A7 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051265D22020B6F00C2F3A7 /* FindFriendsViewController.swift */; };
 		96AFCADC3E5293400E54000B /* Pods_Clonestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0FB8300A936C2A2855BBD /* Pods_Clonestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +29,6 @@
 		2C9F6885589FE33228353458 /* Pods-Clonestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clonestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clonestagram/Pods-Clonestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		8002C91421FD43CC0003FEB6 /* Clonestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clonestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8002C91721FD43CC0003FEB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8002C91921FD43CC0003FEB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8002C91C21FD43CC0003FEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8002C91E21FD43CE0003FEB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8002C92121FD43CE0003FEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +36,13 @@
 		8002C92921FD4D160003FEB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8002C93321FE4E220003FEB6 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8002C93521FE57000003FEB6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8002C93B21FF7AAB0003FEB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8002C93D21FF94200003FEB6 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		8002C93F21FFD7D20003FEB6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		805126572202005B00C2F3A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		805126592202011000C2F3A7 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		8051265B22020B1600C2F3A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8051265D22020B6F00C2F3A7 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		80E0FB8300A936C2A2855BBD /* Pods_Clonestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clonestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,8 +96,10 @@
 		8002C92B21FD4F980003FEB6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8002C91921FD43CC0003FEB6 /* ViewController.swift */,
 				8002C93521FE57000003FEB6 /* LoginViewController.swift */,
+				8002C93D21FF94200003FEB6 /* CreateUsernameViewController.swift */,
+				8051265B22020B1600C2F3A7 /* HomeViewController.swift */,
+				8051265D22020B6F00C2F3A7 /* FindFriendsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 		8002C92C21FD4FC50003FEB6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				805126592202011000C2F3A7 /* Storyboard+Utility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,6 +115,7 @@
 		8002C92D21FD4FCC0003FEB6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8002C93B21FF7AAB0003FEB6 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +130,7 @@
 		8002C92F21FD4FDE0003FEB6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8002C93F21FFD7D20003FEB6 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -133,6 +150,7 @@
 			children = (
 				8002C92921FD4D160003FEB6 /* GoogleService-Info.plist */,
 				8002C92321FD43CE0003FEB6 /* Info.plist */,
+				805126572202005B00C2F3A7 /* Constants.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -312,8 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8002C93C21FF7AAB0003FEB6 /* User.swift in Sources */,
 				8002C93621FE57000003FEB6 /* LoginViewController.swift in Sources */,
-				8002C91A21FD43CC0003FEB6 /* ViewController.swift in Sources */,
+				8002C94021FFD7D20003FEB6 /* UserService.swift in Sources */,
+				8051265C22020B1600C2F3A7 /* HomeViewController.swift in Sources */,
+				8051265A2202011000C2F3A7 /* Storyboard+Utility.swift in Sources */,
+				8051265E22020B6F00C2F3A7 /* FindFriendsViewController.swift in Sources */,
+				805126582202005B00C2F3A7 /* Constants.swift in Sources */,
+				8002C93E21FF94200003FEB6 /* CreateUsernameViewController.swift in Sources */,
 				8002C91821FD43CC0003FEB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

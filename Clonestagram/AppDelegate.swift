@@ -13,18 +13,22 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        let storyboard = UIStoryboard(name: "Login", bundle: .main)
-        
-        if let initialViewController = storyboard.instantiateInitialViewController() {
-            window?.rootViewController = initialViewController
-            window?.makeKeyAndVisible()
+        let viewController: UIViewController
+        if let userData = UserDefaults.standard.data(forKey: Constants.UserDefaults.currentUser),
+            let user = try? JSONDecoder().decode(User.self, from: userData) {
+            User.setCurrent(user: user)
+            viewController = UIStoryboard.initialViewController(for: .main)
+        } else {
+            viewController = UIStoryboard.initialViewController(for: .login)
         }
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

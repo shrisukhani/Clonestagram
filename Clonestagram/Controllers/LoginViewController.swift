@@ -9,9 +9,10 @@
 import UIKit
 import FirebaseUI
 import FirebaseAuth
+import FirebaseDatabase
 
 typealias FIRUser = FirebaseAuth.User
-class LoginViewController: ViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var registerOrLoginButton: UIButton!
     
     override func viewDidLoad() {
@@ -46,6 +47,21 @@ extension LoginViewController: FUIAuthDelegate {
             assertionFailure("Error signing in: \(error.localizedDescription)")
             return
         }
-        print("Handle User Sign Up/Log In")
+        
+        guard let firUser = authDataResult?.user else {
+            print("No User Available")
+            return
+        }
+        
+        UserService.show(forUID: firUser.uid, completion: { (user) in
+            guard let user = user else {
+                self.performSegue(withIdentifier: Constants.Segues.toCreateUsername, sender: LoginViewController.self)
+                return
+            }
+            let viewController = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = viewController
+            self.view.window?.makeKeyAndVisible()
+            User.setCurrent(user: user, writeToUserDefaults: true)
+        })
     }
 }
